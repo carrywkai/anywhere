@@ -12,5 +12,5 @@ export default {
 <!-- 使用stylus要下载二个依赖包：npm install stylus --save 和 npm install stylus-loader --save -->
 <style lang="stylus" scoped>
   .dvBox
-    color: hotpink
+    color: pink
 </style>
