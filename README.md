@@ -40,5 +40,17 @@ npm install fastclick --save
 import fastClick from 'fastclick'
 fastClick.attach(document.body)
 ```
+#### 使用vue-awesome-swiper 插件来制作home轮播图
+npm 安装
+``` javascript
+npm install vue-awesome-swiper --save
+```
+在main.js中配置选项
+``` javascript
+import Vue from 'vue'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
->>>>>>> 89a7ccf29ddb667dbd8e6f145f881b4b54120363
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
+```
