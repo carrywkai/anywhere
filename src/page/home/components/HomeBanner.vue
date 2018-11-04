@@ -51,7 +51,7 @@ export default {
     background: #fff
   .wrapper
     width: 100%
-    height: 31.25vw
+    height: 26.57vw  // 图片的宽高比，解决图片加载时的抖动问题
     .banner-img
       width:100%
 </style>
