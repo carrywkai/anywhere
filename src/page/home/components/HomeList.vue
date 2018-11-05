@@ -27,7 +27,7 @@ export default {
         {
           id: '0001',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          text: '景点门票'
+          text: '景点门票景点门票景点门票'
         },
         {
           id: '0002',
@@ -84,7 +84,7 @@ export default {
       this.listImg.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
-          pages[page] = []
+          pages[page] = [] // 数组里面还能存放数组
         }
         pages[page].push(item)
       })
@@ -95,6 +95,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/mixins'
   .wrapper
     width: 100%
     .list-wrapper
@@ -107,4 +108,9 @@ export default {
           width: 1rem
           height: 1rem
           padding .2rem 0
+        .list-text
+          ellipse()
+          /*overflow hidden*/
+          /*white-space nowrap*/
+          /*text-overflow ellipsis*/
 </style>
